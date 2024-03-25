@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#memo-input {
+  width: 70%;
+  padding: 10px;
+}
+
+#add-memo {
+  width: 25%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#memo-list {
+  margin-top: 20px;
+}

@@ -7,12 +7,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app">
+  <header>
     <h1>memo_for_me</h1>
-    <input type="text" id="memo-input" placeholder="メモを入力...">
-    <button id="add-memo">追加</button>
-    <ul id="memo-list"></ul>
+  </header>
+  
+  <div class="container">
+    <div class="container-inner">
+      <h2>学習記録やメモを書いてみよう</h2>
+      <div class="btn-wrapper">
+        <button class="btn signup">新規登録</button>
+        <button class="btn login">ログイン</button>
+      </div>
+    </div>
   </div>
-  <script src="script.js"></script>
+
 </body>
 </html>

@@ -1,24 +1,42 @@
-body {
-  font-family: Arial, sans-serif;
+
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-#app {
-  max-width: 600px;
+header {
+  background-color: #00BFFF; /* 水色の背景 */
+  padding: 20px; /* パディングを追加 */
+  text-align: center; /* テキストを中央揃えに */
+  color: white; /* テキストの色を白に */
+}
+
+.container-inner {
+  display: flex;
+  flex-direction: column; /* 子要素を縦方向に並べる */
+  align-items: center; /* 子要素を中央揃えにする */
+  height: 50vh; /* コンテナの高さをビューポートの高さに合わせる */
   margin: 0 auto;
-  padding: 20px;
 }
 
-#memo-input {
-  width: 70%;
-  padding: 10px;
+.container-inner h2 {
+  margin-top: 100px;
 }
 
-#add-memo {
-  width: 25%;
-  padding: 10px;
+.container-inner button {
+  margin: 80px 40px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: #00BFFF; /* 水色の背景 */
+  color: white; /* テキストの色を白に */
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-#memo-list {
-  margin-top: 20px;
+.container-inner button:hover {
+  background-color: #4ca7c5; /* 水色の背景 */
+  color: white; /* テキストの色を白に */
 }
+

@@ -94,9 +94,13 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-  background:#53B9A8;
+  background:#4ca7c5;
   
 }
 /* ::-webkit-input-placeholder {
 
 } */
+
+.error {
+  color: red;
+}

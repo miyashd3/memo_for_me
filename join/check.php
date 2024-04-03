@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>入力内容の確認</title>
+  <link rel="stylesheet" href="entry_style.css">
 </head>
 <body>
 <div id="wrap">
@@ -16,13 +17,10 @@
 			<p>記入した内容を確認して、「登録する」ボタンをクリックしてください</p>
 			<form action="" method="post">
 				<dl>
-					<dt>メールアドレス</dt>
-					<dd></dd>
-					<dt>パスワード</dt>
-					<dd>
-						【表示されません】
-					</dd>
-				</dl>
+					<p>メールアドレス</p>
+					<p></p>
+					<p>パスワード</p>
+					<p>【表示されません】</p>
 				<div><a href="">訂正する</a> | <input type="submit" value="登録する" /></div>
 			</form>
 		</div>

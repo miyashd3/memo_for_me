@@ -1,0 +1,28 @@
+
+#wrap {
+  text-align: center;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #00BFFF;
+  color: white;
+}
+
+a, input {
+  margin: 40px 40px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: #00BFFF; /* 水色の背景 */
+  color: white; /* テキストの色を白に */
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}

@@ -11,6 +11,15 @@ header {
   color: white; /* テキストの色を白に */
 }
 
+header {
+  display: flex;
+  justify-content: space-between; /* 要素を左右に配置 */
+  align-items: center; /* 要素を垂直方向の中央に揃える */
+  padding: 20px; /* パディングを追加 */
+  background-color: #00BFFF; /* 水色の背景 */
+  color: white; /* テキストの色を白に */
+}
+
 .container-inner {
   display: flex;
   flex-direction: column; /* 子要素を縦方向に並べる */
@@ -23,8 +32,11 @@ header {
   margin-top: 100px;
 }
 
-.container-inner button {
+.btn-wrapper {
   margin: 80px 40px;
+}
+
+button {
   border-radius: 10px;
   padding: 10px 30px;
   background-color: #00BFFF; /* 水色の背景 */
@@ -35,7 +47,29 @@ header {
   cursor: pointer;
 }
 
-.container-inner button:hover {
+button:hover {
   background-color: #4ca7c5; /* 水色の背景 */
   color: white; /* テキストの色を白に */
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 40px;
+}
+
+.menu form input {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.list h2 {
+  text-align: center;
+}
+
+.list li {
+  font-size: 1.3em;
+  margin-left: 2em;
+  padding-bottom: 0.5em;
 }

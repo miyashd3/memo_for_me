@@ -12,7 +12,11 @@
     <h1>会員登録</h1>
     <form>
         <div class="iconUser"></div>
-        <input type="text" placeholder="email" required>
+        <div class="user">
+          <input type="text" placeholder="name" required>
+          <input type="text" class="email" placeholder="email" required>
+        </div>
+        <p class="error">* 名前を入力してください</p>
         <p class="error">* メールアドレスを入力してください</p>
         <p class="error">* 指定されたメールアドレスはすでに登録されています</p>
         <div class="iconPassword"></div>

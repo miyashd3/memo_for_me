@@ -68,6 +68,9 @@ input[type="password"]{
   border:1px solid #ccc;
   border-radius: 10px;
 }
+.user {
+  text-align: right;
+}
 input[type="text"]{
   width:76%;
   height:20px;

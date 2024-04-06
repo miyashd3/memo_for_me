@@ -1,0 +1,64 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.full-page-form {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+input[type="text"] {
+  margin: 8px;
+  padding: 16px;
+  border: none;
+}
+
+.full-page-form textarea {
+  flex: 1; /* 入力フィールドが利用可能なスペースを均等に使用する */
+  margin: 8px;
+  padding: 16px;
+  border: none;
+}
+
+.full-page-form textarea {
+  resize: none; /* ユーザーによるリサイズを無効化 */
+}
+
+input[type="text"]:focus, textarea:focus {
+  outline: none;
+  border: 1px solid transparent;
+  background-color: #f0f0f0; /* フォーカス時の背景色を変更 */
+}
+
+.button-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  gap: 10px; /* ボタン間の隙間 */
+}
+
+.back-button {
+  padding: 10px 20px;
+  text-decoration: none; /* 下線を消す */
+  color: white; /* テキスト色 */
+  background-color: #f44336; /* 背景色 */
+  border-radius: 5px; /* 角を丸くする */
+  cursor: pointer; /* カーソルをポインタに */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00BFFF;
+  color: white;
+  cursor: pointer;
+}
+
+.back-button:hover, button:hover {
+  opacity: 0.8; /* ホバー時のスタイル */
+}

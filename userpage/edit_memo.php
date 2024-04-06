@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>メモタイトル</title>
+  <title>新規メモ作成</title>
+  <link rel="stylesheet" href="memo_style.css">
 </head>
 <body>
-  <h1>タイトル</h1>
-  <hr>
-  <textarea name="" id="" cols="30" rows="10"></textarea>
-
-  <footer>
-    <a href="index.php"><button>もどる</button></a>
-    <a href="index.php"><button>更新して戻る</button></a>
-    <a href="index.php"><button>削除して戻る</button></a>
-
-  </footer>
+  <form action="メモを保存する処理のURL" method="post" class="full-page-form">
+    <input type="text" id="title" name="title" placeholder="タイトルを入力してください" autofocus>
+    <textarea id="memo" name="memo" placeholder="メモの内容を入力してください"></textarea>
+    <div class="button-container">
+      <a href="index.php" class="back-button">戻る</a>
+      <button type="submit" class="delete">削除</button>
+      <button type="submit">更新</button>
+    </div>
+  </form>
 </body>
 </html>

@@ -45,6 +45,15 @@ input[type="text"]:focus, textarea:focus {
   padding: 10px 20px;
   text-decoration: none; /* 下線を消す */
   color: white; /* テキスト色 */
+  background-color: gray; /* 背景色 */
+  border-radius: 5px; /* 角を丸くする */
+  cursor: pointer; /* カーソルをポインタに */
+}
+
+.delete {
+  padding: 10px 20px;
+  text-decoration: none; /* 下線を消す */
+  color: white; /* テキスト色 */
   background-color: #f44336; /* 背景色 */
   border-radius: 5px; /* 角を丸くする */
   cursor: pointer; /* カーソルをポインタに */
@@ -59,6 +68,6 @@ button {
   cursor: pointer;
 }
 
-.back-button:hover, button:hover {
+.delete:hover, .back-button:hover, button:hover {
   opacity: 0.8; /* ホバー時のスタイル */
 }

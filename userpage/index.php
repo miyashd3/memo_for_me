@@ -1,3 +1,17 @@
+<?php
+session_start();
+require('../library.php');
+
+if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
+  $id = $_SESSION['id'];
+  $name = $_SESSION['name'];
+} else {
+  header('Location: ../join/login.php');
+  exit();
+}
+
+$db = dbconnect();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,7 +22,7 @@
 </head>
 <body>
   <header>
-    <p>〇〇さんのページ</p>
+    <p><?php echo h($name); ?>さんのノート</p>
     <button class="header">ログアウト</button>
   </header>
   <div class="menu">

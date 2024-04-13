@@ -5,19 +5,16 @@ html, body {
 }
 
 header {
-  background-color: #00BFFF; /* 水色の背景 */
-  padding: 20px; /* パディングを追加 */
-  text-align: center; /* テキストを中央揃えに */
-  color: white; /* テキストの色を白に */
-}
-
-header {
   display: flex;
   justify-content: space-between; /* 要素を左右に配置 */
   align-items: center; /* 要素を垂直方向の中央に揃える */
   padding: 20px; /* パディングを追加 */
   background-color: #00BFFF; /* 水色の背景 */
   color: white; /* テキストの色を白に */
+}
+
+header h1 {
+  margin:20px auto;
 }
 
 .container-inner {

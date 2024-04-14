@@ -41,7 +41,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param('ssi', $title, $memo, $memo_id);
     $stmt->execute();
   } elseif ($_POST['action'] === 'delete') {
-
+    $stmt = $db->prepare('delete from memos where id=? and users_id=? limit 1');
+    if (!$stmt) {
+      die($db->error);
+    }
+    $stmt->bind_param('ii', $memo_id, $id);
+    $success = $stmt->execute();
+    if (!$success) {
+      die($db->error);
+    }
   }
   
   header('Location: index.php');

@@ -23,7 +23,7 @@ $db = dbconnect();
 <body>
   <header>
     <p><?php echo h($name); ?>さんのノート</p>
-    <button class="header">ログアウト</button>
+    <a href="../logout.php"><button class="header">ログアウト</button></a>
   </header>
   <div class="menu">
     <a href="new_memo.php"><button>新規追加</button></a>

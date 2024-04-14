@@ -89,5 +89,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="submit" value="登録する">
     </form>
   </fieldset>
+  <div class="menu">
+    <a href="login.php"><button>ログイン</button></a>
+    <a href="../index.html"><button>topページ</button></a>
+  </div>
 </body>
 </html>

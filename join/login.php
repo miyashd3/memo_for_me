@@ -64,6 +64,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="submit" value="Enter">
     </form>
   </fieldset>
+
+  <div class="menu">
+    <a href="signup.php"><button>新規登録</button></a>
+    <a href="../index.html"><button>topページ</button></a>
+  </div>
 </body>
 </html>
 

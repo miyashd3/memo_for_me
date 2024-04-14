@@ -107,3 +107,25 @@ input[type="submit"]:hover{
 .error {
   color: red;
 }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 40px;
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: #95bdca; /* 水色の背景 */
+  color: white; /* テキストの色を白に */
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a595d; /* 水色の背景 */
+  color: white; /* テキストの色を白に */
+}

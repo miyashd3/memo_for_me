@@ -70,3 +70,10 @@ button:hover {
   margin-left: 2em;
   padding-bottom: 0.5em;
 }
+
+.memo_title {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 40px;
+  border-bottom: 1px dashed #646a6d;
+}

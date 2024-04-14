@@ -17,7 +17,7 @@ $db = dbconnect();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>あなたのメモ</title>
+  <title><?php echo h($name); ?></title>
   <link rel="stylesheet" href="../index_style.css">
 </head>
 <body>
@@ -37,11 +37,27 @@ $db = dbconnect();
 
   <div class="list">
     <h2>メモ一覧</h2>
-    <ul>
-      <a href=""><li>memoタイトル</li></a>
-      <a href=""><li>memoです</li></a>
-      <a href=""><li>memoです</li></a>
-    </ul>
+    <?php
+    $stmt = $db->prepare('select id, users_id, title, memo, created from memos where users_id=? order by id desc');
+    if (!$stmt) {
+      die($db->error);
+    }
+    $stmt->bind_param('i', $id);
+    $success = $stmt->execute();
+    if (!$success) {
+      die($db->error);
+    }
+
+    $stmt->bind_result($id, $users_id, $title, $memo, $created);
+    while ($stmt->fetch()):
+    ?>
+      <ul>
+        <div class="memo_title">
+          <a href="edit_memo.php?id=<?php echo h($id); ?>"><li><?php echo h($title); ?></li></a>
+          <p><?php echo h($created); ?></p>
+        </div>
+      </ul>
+    <?php endwhile; ?>
   </div>
 </body>
 </html>

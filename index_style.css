@@ -36,7 +36,7 @@ header h1 {
 button {
   border-radius: 10px;
   padding: 10px 30px;
-  background-color: #00BFFF; /* 水色の背景 */
+  background-color: #82dbb7; /* 水色の背景 */
   color: white; /* テキストの色を白に */
   border: none;
   font-size: 16px;
@@ -76,4 +76,25 @@ button:hover {
   justify-content: space-between;
   margin: 1em 40px;
   border-bottom: 1px dashed #646a6d;
+}
+
+.image-container {
+  
+  text-align: center;
+}
+
+.sampleimage {
+  
+}
+
+.sampleimage img {
+  max-width: 40%;
+  border-radius: 10px;
+  border: solid 1px gray;
+}
+
+@media (max-width: 600px) {
+  .sampleimage img {
+    max-width: 80%;
+  }  
 }

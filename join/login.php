@@ -53,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <form action="" method="post">
         <div class="iconUser"></div>
         <input type="text" name="email" size="35" maxlength="255" placeholder="email" required value="<?php echo h($email); ?>">
+        <div></div>
         <div class="iconPassword"></div>
         <input type="password" name="password" size="35" maxlength="255" placeholder="Password" required">
         <?php if (isset($error['login']) && $error['login'] === 'blank'): ?>

@@ -27,8 +27,8 @@ $db = dbconnect();
   </header>
   <div class="menu">
     <a href="new_memo.php"><button>新規追加</button></a>
-    <form action="検索結果を処理するページのURL" method="get">
-      <input type="text" name="search" placeholder="検索...(未実装)">
+    <form action="search_result.php" method="get">
+      <input type="text" name="search" placeholder="検索...">
       <button type="submit">検索</button>
     </form>
   </div>
@@ -68,10 +68,10 @@ $db = dbconnect();
       </ul>
     <?php endwhile; ?>
     <?php if ($page > 1): ?>
-    <p><a href="index.php?page=<?php echo $page - 1; ?>">前のページ</a></p>
+    <p><a href="index.php?page=<?php echo $page - 1; ?>"><button>前のページ</button></a></p>
     <?php endif; ?>
     <?php if ($page<$max_page): ?>
-      <p><a href="index.php?page=<?php echo $page + 1; ?>">次のページ</a></p>
+      <p><a href="index.php?page=<?php echo $page + 1; ?>"><button>次のページ</button></a></p>
     <?php endif; ?>
   </div>
 </body>
